@@ -30,3 +30,13 @@ isinstance(b,int)
 
 #Q3
 print [[1,0],[2.3]]
+
+#Q4
+fname=raw_input('enter file name:')
+all=[]
+fobj=open(fname,'w')
+fobj.writelines(['%s' % z for z in all])
+fobj.close()
+fobj=open(fname,'r')
+for eachLine in fobj:
+    print eachLine
